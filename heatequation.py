@@ -1,10 +1,9 @@
-import math as m
 import numpy as np
 #import matplotlib.pyplot as plt
 
 def heatequation(Ta,Tb,T0,dx,dT,tend):
     alpha=1.172*10**(-5)
-    N_T = int(m.floor(tend/dT))
+    N_T = int(round(tend/dT))
     N_x = int(1/dx) #note that dx must divide into 1
     T=T0*np.ones(N_x+1)
     T[0]=Ta
