@@ -1,6 +1,6 @@
 import math as m
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 def heatequation(Ta,Tb,T0,dx,dT,tend):
     alpha=1.172*10**(-5)
@@ -24,6 +24,6 @@ Tb=50
 dx=0.01
 dT=1
 y=heatequation(Ta,Tb,T0,dx,dT,tend)
-plt.plot(y)
-plt.ylabel('x')
-plt.show()
+#plt.plot(y)
+#plt.ylabel('x')
+#plt.show()
